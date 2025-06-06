@@ -7,7 +7,7 @@ import Footer from './components/layout/Footer';
 // Section Components
 import Bio from './components/sections/Bio/Bio';
 import Skills from './components/sections/Skills/Skills';
-import Projects from './components/sections/Projects';
+import Projects from './components/sections/Projects/Projects';
 import Experience from './components/sections/Experience';
 import Education from './components/sections/Education';
 

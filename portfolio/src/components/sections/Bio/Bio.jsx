@@ -6,6 +6,8 @@ import "./Bio.scss";
 
 
 const servicesList = personal.services;
+const name = personal.name;
+const description = personal.description;
 
 const Bio = () => {
     const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -36,13 +38,10 @@ const Bio = () => {
 
             <section className="bio-details">
                 <h1 tabIndex="0" className="bio-name">
-                    Prakash
+                    {name}
                 </h1>
                 <p className="bio-summary" tabIndex="0">
-                    Passionate Full Stack Developer with expertise in building scalable
-                    and maintainable web applications. Skilled in React, Node.js, and
-                    modern JavaScript ecosystems. Dedicated to creating smooth user
-                    experiences and clean, efficient code.
+                    {description}
                 </p>
 
                 <div className="services" aria-live="polite" aria-atomic="true">

@@ -5,8 +5,9 @@
     color: #e5e7eb;
     padding: 4rem 5rem;
     gap: 5rem;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
 
     @media (max-width: 1024px) {
         gap: 4rem;
@@ -26,7 +27,7 @@
 }
 
 .profile-picture {
-    flex: 1;
+    flex: 1 1 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +36,7 @@
         width: auto;
         max-height: 360px;
         border-radius: 12px;
+        margin-top: 25px;
         object-fit: cover;
         border: 3px solid #111;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
@@ -52,7 +54,10 @@
 }
 
 .bio-details {
-    flex: 2;
+    flex: 2 1 400px;
+    /* flex-grow: 2, flex-shrink: 1, flex-basis: 400px */
+    min-width: 0;
+    /* prevent overflow inside flex */
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
@@ -82,14 +87,17 @@
     .bio-summary {
         font-size: 1.3rem;
         line-height: 1.85;
-        max-width: 720px;
         color: #d1d5db;
         border-left: 5px solid #2563eb;
         padding-left: 1.2rem;
         font-weight: 500;
+        overflow-wrap: break-word;
+        /* prevent overflow with long words */
+        word-break: break-word;
+        max-width: 100%;
+        /* allow flexible width */
 
         @media (max-width: 1024px) {
-            max-width: 100%;
             font-size: 1.15rem;
         }
 
