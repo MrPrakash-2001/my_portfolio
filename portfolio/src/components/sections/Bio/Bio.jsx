@@ -55,7 +55,7 @@ const Bio = () => {
                 </div>
 
                 <a
-                    href="https://www.linkedin.com/in/prakash"
+                    href={personal.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="linkedin-link"
