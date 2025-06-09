@@ -16,11 +16,13 @@ function App() {
     document.documentElement.classList.add('dark');
   }, []);
 
+
   return (
     <div className="bg-black text-white font-sans transition-colors duration-300 min-h-screen">
       <Navbar />
 
       <main className="max-w-7xl mx-auto">
+
         <section id="bio" className="py-12 px-6 sm:px-8 md:px-10">
           <Bio />
         </section>

@@ -1,4 +1,10 @@
-// src/data/personal.js
+import node from '../assets/node.png';
+import angular from '../assets/angular.png';
+import express from '../assets/express.png';
+import react from '../assets/react.svg';
+
+
+
 const parseJSON = (envVar) => {
     try {
         return JSON.parse(envVar);
@@ -20,6 +26,46 @@ const personal = {
     experience: parseJSON(import.meta.env.VITE_EXPERIENCE_JSON) || [],
     education: parseJSON(import.meta.env.VITE_EDUCATION_JSON) || [],
     services: parseJSON(import.meta.env.VITE_SERVICE_JSON) || [],
+    images: [
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express,
+        // node,
+        // angular,
+        // react,
+        // express
+    ]
 };
+
+
 
 export default personal;
