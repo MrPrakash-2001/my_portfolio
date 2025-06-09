@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Layout Components
-import Navbar from './components/layout/navbar';
+import Navbar from './components/layout/NavigationBar';
 import Footer from './components/layout/Footer';
 
 // Section Components
