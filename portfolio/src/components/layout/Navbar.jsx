@@ -172,7 +172,7 @@ export default function Navbar() {
                 {/* Desktop Navigation */}
                 <NavBody>
                     <NavbarName name="Prakash" />
-                    
+
                     <NavItems
                         items={navItems}
                         renderItem={({ name, link }) => (
@@ -197,12 +197,7 @@ export default function Navbar() {
                 {/* Mobile Navigation */}
                 <MobileNav>
                     <MobileNavHeader>
-                        <NavbarLogo
-                            onClick={() => {
-                                setActive(null);
-                                setIsMobileMenuOpen(false);
-                            }}
-                        />
+
                         <MobileNavToggle
                             isOpen={isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
